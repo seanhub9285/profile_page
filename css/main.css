@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Custom Properties */
+:root {
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Philosopher', sans-serif;
+    --fs-h1: 1.8em;
+    --fs-h2: 1.7em;
+    --fs-p: .9em;
+    --clr-dark: #062863;
+    --clr-light: #fff;
+    --clr-accent: #808080;
+    --clr-bg: #262629;
+}
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+section {
+   max-width: 100%;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+/* Typography */
+h1,
+h3 {
+    line-height: 1;
+    margin: 0;
+    color: var(--clr-light);
+}
+h2 {
+    color: var(--clr-bg);
+}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+/* Header */
+header {
+    background-color: var(--clr-light);
+    border-bottom: 1px solid var(--clr-dark);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;  
+}
+/* Navigation */
+#navbar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+.navbar__list {
+    list-style-type: none;
+    height: 20px;
+    width: 100%;;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav__link {
+    text-decoration: none;
+    height: 20px;
+    width: 100%;;
+    margin-right: 50px;
+    color: var(--clr-accent);
+   font-family: var(--ff-secondary);
+}
+.nav__link:hover {
+    color: var(--clr-bg);
+}
+/* Welcome Section */
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--clr-bg);
+ }
+.welcome-section--content {
+    padding-top: 9em;  
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: var(--fs-h1);
+}
+.welcome-section--content-p {
+    font-family: var(--ff-secondary);
+    margin: 0;
+    color: var(--clr-accent);
+}
+/* About Section */
+#about_section {
+    margin: 0;
+    width: 100%;
+    background-color: var(--clr-light);
+    padding-bottom: 20px;
+}
+.about-section--container {
+    width: 100%;  
+}
+.about-section--contents {
+    max-width: 100%;
+    margin: 20px;
+    padding: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    border: 2px solid var(--clr-dark);
+}
+.about-section--info {
+    width: 50%;
+    height: 400px;    
+    border: 1px solid var(--clr-dark);    
+    padding: 20px;
+}
+.about-section--img {
+    width:30%;
+    height: 400px;
+    background-image: url(../img/oluwaseun.jpg);
+    background-size: cover;
+}
+.about-section--title {
+    text-align: center;
+    padding: 30px;
+}
+ul {
+    list-style-type: none;
+    font-family: var(--ff-secondary);
+    width: 100%;
+    text-align: justify;
+}
+/* Contact Me section */
+.contact-form {
+    background-color: var(--clr-accent);
+}
+.contact-title {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+input[type=text], input[type=email], input[type=number] {
+    width: 100%;
+    font-size: 1em; 
+    padding: 6px 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid var(--clr-accent);
+    font-family: var(--ff-secondary);
+    border-radius: 2px;;
+}
+textarea {
+        font-family: var(--ff-secondary);
+        padding: 10px;
+        font-size: 17px;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 17px;
+        margin-top: 5px;
+        border: 1px solid var(--clr-accent);
+        resize: none;
+    }
+form {   
+        border: 2px solid var(--clr-accent);
+        padding: 50px;
+        width: 100%;
+}
+label {
+    font-family: var(--ff-secondary);
+    color: var(--clr-light);
+}
+/* Button */
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-light);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+ }
+.submit-btn {
+    font-family: var(--ff-secondary);
+    border: 1px solid var(--clr-dark);
+}
